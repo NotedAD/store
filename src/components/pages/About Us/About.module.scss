@@ -1,0 +1,218 @@
+@import "../../../mixins_variables/variables.scss";
+@import "../../../mixins_variables/mixins.scss";
+
+.about {
+  margin-top: 5em;
+
+  & > p {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.aboutData {
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+.aboutDataText {
+  & > p:last-child {
+    padding-top: 1.3em;
+  }
+}
+
+.aboutDataNumber {
+  display: flex;
+
+  .aboutDataNumberTop > p:first-child {
+    padding-right: 4em;
+    padding-bottom: 4em;
+  }
+
+  .aboutDataNumberBottom > p:first-child {
+    padding-right: 4em;
+    padding-bottom: 4em;
+  }
+}
+
+.aboutDataNumberInfo {
+  font-size: 36px;
+  background: var(--link-color-specific);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.aboutDataNumberMoreInfo {
+  font-size: 20px;
+}
+
+.aboutMission {
+  & > img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .aboutMissionText {
+    background-color: #dedede;
+    margin-top: -6em;
+    width: 100%;
+
+    & > p:first-child {
+      padding-top: 6em;
+      font-size: 24px;
+      margin-left: 17em;
+    }
+
+    .aboutMissionMoreText {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+      width: 65%;
+      padding-bottom: 2em;
+    }
+  }
+}
+
+.theyTalkAboutUs {
+  margin: 4em auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  & > p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 3em;
+    font-weight: 600;
+    line-height: 26.4px;
+  }
+
+  .theyTalkAboutUsText {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+  }
+}
+
+.personJob {
+  font-size: 14px;
+  color: #909090;
+}
+
+.bodyPeopleAbout {
+  font-size: 18px;
+  margin-top: 0;
+  width: 55%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+
+  & > img {
+    padding-bottom: 1em;
+  }
+
+  p {
+    width: 85%;
+  }
+}
+
+.peoplePhoto {
+  width: 45%;
+}
+
+.peoplePhoto > hr {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 1.5em;
+  border: 1px solid #282828;
+}
+
+.peopleAboutAs {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.arrow {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 5vh;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.lastNews {
+  & > p:first-of-type {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .lastNewsInfo {
+    display: flex;
+    background-color: #dedede;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  & > button {
+    display: block;
+    margin: 2em auto;
+    margin-bottom: 6em;
+    padding: 0 2.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    @include buttonBackgroundWithBorder;
+  }
+}
+
+.lastNewsInfoElement {
+  margin: 2em;
+  background: #ffffff;
+  border-radius: 10px;
+  padding-bottom: 0.9em;
+  width: min-content;
+  & > img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  & > p:first-of-type {
+    font-size: 24px;
+    margin: 0 0.8em;
+  }
+
+  & > p:last-of-type {
+    margin-left: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  & > a {
+    margin-left: 1.2em;
+    background: var(--link-color-specific);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  & > span {
+    padding-left: 5.5em;
+    color: #dedede;
+  }
+}

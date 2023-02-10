@@ -1,0 +1,28 @@
+.basket{
+    width: 90%;
+    margin: 2em auto;
+  
+    & > a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.4);
+
+      &:hover {
+        color: rgb(0, 0, 0);
+      }
+    }
+
+     &>p:first-of-type{
+        font-size: 24px;
+     }
+}
+
+.moreProducts{
+    &>p:first-of-type{
+        font-size: 24px;
+    }
+}
+
+.moreProductsBuy{
+    display: flex;
+    justify-content: space-between;
+}

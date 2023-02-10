@@ -1,0 +1,118 @@
+@import "../../../mixins_variables/mixins.scss";
+
+.productPage{
+    width: 90%;
+    margin: 2em auto;
+  
+    & > a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.4);
+
+      &:hover {
+        color: rgb(0, 0, 0);
+      }
+    }
+}
+
+hr:nth-last-child(1){
+    border: 2px solid #DEDEDE;
+    width: 40vw;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.productPageInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgProductInfo{
+    width: 40%;
+
+    &>img{
+        display: block;
+        margin: 1em auto;
+        margin-bottom: 8em;
+    }
+}
+
+.productInfo{
+    width: 40%;
+    margin-right: 8em;
+    
+    &>p:first-of-type{
+        margin-bottom: 2em;
+        font-size: 24px;
+    }
+
+    .price{
+        margin-left: 2em;
+    }
+
+    .inCart{
+        @include buttonBackground;
+        color: #fff;
+        padding: 1em 2.5em;
+    }
+
+    .add{
+        margin-left: 2em;
+    }
+
+    .volumeButtons {
+        display: flex;
+        width: 23%;
+        margin: 1em 0;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .buttonVolume {
+        @include buttonBackgroundWithBorder;
+        line-height: 20px;
+      }
+      
+      .buttonVolume.active {
+        @include buttonBackground;
+      }
+
+    .goCart{
+        @include buttonBackgroundWithBorder;
+        padding: 1em 2.5em;
+    }
+
+    .amount{
+        margin: 0 .5em;
+    }
+}
+
+.productInfoMore{
+    margin-top: 1.5em;
+
+    &>a{
+        color: #000;
+
+        &:hover{
+            color: #C57E34;
+        }
+
+        &:first-of-type{
+            margin-right: 3em;
+        }
+    }
+
+    &>p:first-of-type{
+        margin-bottom: 3em;
+    }
+}
+
+.moreProductsBuy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.moreProducts{
+    &>p:first-of-type{
+        font-size: 24px;
+    }
+}

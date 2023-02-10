@@ -1,0 +1,384 @@
+@import '../../../mixins_variables/mixins.scss';
+
+.main {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.cardFullContent {
+  width: 70%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+
+  i {
+    font-size: 10vh;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.card {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardContent {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  border-radius: 20px;
+  background: linear-gradient(244.8deg, #595959 1.16%, #333333 63.81%);
+}
+
+.leftContent {
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(49.65deg, #BD7533 2.17%, #FEB839 99.05%);
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftText {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  h2 {
+    color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  p {
+    color: #fff;
+    line-height: 19.5px;
+  }
+}
+
+.rightContent {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+
+.barrels {
+  flex-shrink: 0;
+  background: url('/barrels.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  height: 60%;
+  width: 100%;
+  position: relative;
+  right: 3%;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  width: 70%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #148C53;
+    transition: .15s linear;
+  }
+}
+
+.circles {
+  display: flex;
+  height: 10%;
+  width: 20%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  i {
+    border: 0.666667px solid #DEDEDE;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.aboutCompany {
+  background: #DEDEDE;
+  width: 100%;
+  height: 100vh;
+}
+
+.aboutCompanyContent {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+}
+
+.contentAbout {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+.imageAbout {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: calc(10rem + 40%);
+  }
+}
+
+.textAbout {
+  width: 49%;
+  height: 100%;
+
+  h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  p {
+    line-height: 19.5px;
+  }
+}
+
+.triangeTop {
+  width: 100%;
+  height: 10%;
+  background: transparent;
+  transform: rotate(-180deg);
+  background: #fff;
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+  position: relative;
+  bottom: 1px;
+}
+
+.triangeBottom {
+  width: 100%;
+  height: calc(10% + 1px);
+  background: transparent;
+  background: #fff;
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+}
+
+.aboutDataNumber {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+}
+
+.aboutDataNumberP {
+  width: 15%;
+}
+
+.aboutCompanyButton {
+  @include buttonBackgroundWithBorder;
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.aboutDataNumberInfo {
+  font-size: 36px;
+  background: var(--link-color-specific);
+  ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.aboutDataNumberMoreInfo {
+  font-size: 20px
+}
+
+.catalog {
+  width: 100%;
+  height: 150vh;
+
+  h2 {
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+}
+
+.catalogContent {
+  height: 90%;
+  width: 100%;
+  display: flex;
+}
+
+.settings {
+  width: 25%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goodsWall {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.selectionSetting {
+  width: 80%;
+  height: 100%;
+  background: #DEDEDE;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+
+  h5 {
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 10%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 90%;
+}
+
+.oneFilter {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    margin: 0;
+    line-height: 20px;
+  }
+
+  select {
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 70%;
+    border: none;
+  }
+}
+
+.oilCategory {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 94%;
+
+  hr {
+    margin: .1rem;
+    border: 2px solid #DEDEDE;
+  }
+}
+
+.goodsWailPages {
+  height: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.oilCategoryFilter {
+  height: 3%;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #DEDEDE;
+  width: 50%;
+  border: none;
+
+  p {
+    margin: 0;
+    display: inline-block;
+    padding: 0 7px;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+    i {
+      width: 13%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

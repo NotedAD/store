@@ -1,0 +1,165 @@
+@import '../../mixins_variables/mixins.scss';
+@import '../../mixins_variables/variables.scss';
+
+.contacts>p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.contactsInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 20px;
+
+  .contactsInfoSpan {
+    font-size: 16px;
+  }
+
+  .defaultContactsInfo>p:last-child {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contactsInfoMail {
+    display: flex;
+    align-items: center;
+
+    i {
+      padding: 0 .5em;
+      height: 100%;
+    }
+  }
+
+  .contactsInfoPhone {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+
+    i {
+      padding: 0 .5em;
+      height: 100%;
+    }
+  }
+
+  .contactsInfoPhoneLink {
+    margin-right: 1.5em;
+    margin-top: 0;
+
+    a {
+      background-image: var(--link-color-specific);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -moz-text-fill-color: transparent;
+
+      &:hover {
+        background-image: linear-gradient(30deg, #148C53, #148C53);
+      }
+    }
+  }
+}
+
+.indent {
+  width: 6rem;
+}
+
+.moreContactsInfo>p:not(:first-child) {
+  margin: 0;
+  font-size: 16px;
+}
+
+.contacts>hr {
+  width: 40%;
+  border: 2px solid #DEDEDE;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+
+.formRequest {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 24px;
+
+  .formRequestText>p:last-child {
+    font-size: 16px;
+  }
+}
+
+.form {
+  border: 2px solid #DEDEDE;
+  border-radius: 10px;
+  background-color: #DEDEDE;
+  display: flex;
+  justify-content: center;
+
+  .formElement {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .formInput {
+    border: 0;
+    border-radius: 5px;
+    height: 2.2em;
+    width: 100%;
+  }
+
+  .formInputArea {
+    resize: none;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .formInputCheckBox {
+    display: flex;
+    border-radius: 5px;
+    height: 2em;
+    width: 2em;
+    margin-right: 2em;
+  }
+
+  .formButton {
+    margin: 2em 0;
+    padding: .5rem 1.6rem;
+    font-size: 17px;
+    @include buttonBackground;
+  }
+
+  .formElement>p:last-of-type {
+    display: flex;
+    font-size: 14px;
+  }
+}
+
+.formDivButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.infoCompany {
+  display: flex;
+  background-color: #DEDEDE;
+  margin-top: 5em;
+  width: 100%;
+  height: 10em;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-image: var(--link-color-specific);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  &:hover {
+    background-image: linear-gradient(30deg, #148C53, #148C53);
+  }
+}
